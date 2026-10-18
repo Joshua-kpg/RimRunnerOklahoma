@@ -3620,14 +3620,13 @@ const DATA = {
 const LAST_YEAR = {}; // intentionally empty (user decision): 2025-26 game lists are not embedded; raw data stays on the box
 
 
-/* FIREBASE — RimRunnerOklahoma needs its OWN Firebase project (do not reuse Michigan's "mitten-ratings").
-   TODO after the user creates it: paste the web config (Firebase console → Project settings → Your apps).
-   While apiKey/projectId are blank, cloudOn() is false: accounts, picks and follows stay device-only
-   (saved in this browser) and nothing is sent anywhere. */
+/* FIREBASE — RimRunnerOklahoma's own project "rimrunneroklahoma" (not Michigan's "mitten-ratings").
+   Web config is public by design; access is controlled by Firebase Auth + Firestore rules
+   (rules source: repo firebase/firestore.rules). */
 const FIREBASE_CONFIG = {
-  apiKey: "",            // TODO: RimRunnerOklahoma web apiKey
-  authDomain: "",        // TODO: e.g. "<new-project-id>.firebaseapp.com"
-  projectId: ""          // TODO: e.g. "<new-project-id>"
+  apiKey: "AIzaSyBhhBPlUDkiYcKgl0s8-LD4iuYEMDIybmg",
+  authDomain: "rimrunneroklahoma.firebaseapp.com",
+  projectId: "rimrunneroklahoma"
 };
 let fbAuth = null;
 let fbDb = null;
@@ -6045,7 +6044,7 @@ function profilePage(name) {
 function accountPage() {
   const u = currentUser();
   if (u) return profilePage(u.user);
-  return `<section class="hero"><h2>Log in</h2><p>${pendingPick ? "Log in to save your Game of the Week pick. Then you’ll finish the other nine." : "Create a name and password. Accounts save in this browser. Cross-device sync turns on once the site’s Firebase project is connected."}</p></section>
+  return `<section class="hero"><h2>Log in</h2><p>${pendingPick ? "Log in to save your Game of the Week pick. Then you’ll finish the other nine." : "Create a name and password. Your account, picks and follows sync across your devices."}</p></section>
     <section class="card" style="margin-bottom:14px">
       <h3>Log in</h3>
       <label style="color:var(--muted);font-size:.8rem">Name</label>
@@ -6160,7 +6159,7 @@ function howPage() {
       <p><strong>SOS</strong> = average preseason Elo of the opponents you played in 2025-26. <strong>QW</strong> = 2025-26 wins over a team rated higher going into the game (second pass). <strong>Bad losses</strong> = losses to a team rated lower going in. <strong>MPR*</strong> = 0.25 × win % + 0.50 × opponents' win % + 0.25 × opponents' opponents' win %, 2025-26, in-list games only. It's only for reference; OSSAA playoff seeding uses its own rankings and district results, not this.</p>
       <p><strong>Big game:</strong> 85% how highly the two teams rank (average statewide rank) + 15% how close the spread is. Closeness: spread 0–5 = full, 5–10 = 0.65, 10–15 = 0.35, over 15 = 0.1. A pair shows up only once per week.</p>
       <p><strong>Conference champs:</strong> Best record in conference games only. A share of first counts as a title. Every pair is treated as home and home, using the same win chance as the matchup calculator, over 20,000 simulated seasons. Conferences are the official OSSAA 2026-27 Class 6A and 5A basketball districts and, for every other school, its conference as listed on MaxPreps (for example Big 8, 270, Lucky Seven, Crossroads, Little River, Verdigris Valley, Skeltur). Independents are not in any conference. Conferences with only one of our teams are left out.</p>
-      <p><strong>Picks:</strong> Each week has 10 games. Pick who covers the listed spread. Correct cover = 1 point. Push = no point. Not betting. No coins, no cash, no prizes. Accounts and picks save in this browser. They sync across devices only after the site's Firebase project is connected.</p>
+      <p><strong>Picks:</strong> Each week has 10 games. Pick who covers the listed spread. Correct cover = 1 point. Push = no point. Not betting. No coins, no cash, no prizes. Log in and your picks and follows sync across your devices.</p>
       <p><strong>Data:</strong> Teams, schedules and results come from MaxPreps. Classes (6A, 5A, 4A, 3A, 2A, A, B-I, B-II) follow the OSSAA's 2026-27 enrollment (ADM) list and class sizes; the 6A and 5A lists match the OSSAA's 2026-27 basketball districts. Other = Oklahoma schools outside the OSSAA that played at least 8 OSSAA teams in 2025-26. Games before the OSSAA season opening (Nov 1, 2026 for schools without football; Thu Nov 19, 2026 for football-playing schools) are left out. The 2026-27 schedule shows only games between two of these teams, deduplicated to one game per pair per date. Out-of-state and unlisted opponents are not shown and do not move ratings, but their results do count in each W-L record. Scores update nightly (about 1:30 am and 9 am Central time) from MaxPreps finals; forfeits count by the posted win/loss.</p>
       <p>Unofficial. Not affiliated with the OSSAA or MaxPreps. Playoff seeding is not affected by this site.</p>
     </section>`;
