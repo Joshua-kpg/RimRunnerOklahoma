@@ -1,4 +1,42 @@
 {
  "about": "RimRunnerOklahoma 2026-27 finals ledger, written by scripts/update_scores.py. Keyed by MaxPreps contest id. homeMp/awayMp are MaxPreps team ids. state: applied | unlisted (one team not in our list; counts for records only) | pending (final between listed teams with no scheduled game yet; awaiting team-page check) | ignored.",
- "finals": {}
+ "finals": {
+  "53eca7d4-64f0-4a6a-b084-9f326d55804e": {
+   "awayMp": "772d2c46-e9f4-48fe-8b5e-608e4a3407b3",
+   "awayScore": 61,
+   "date": "2026-11-03",
+   "forfeit": false,
+   "homeMp": "f2f8f018-bce5-4185-a9f4-35f199e8279b",
+   "homeScore": 65,
+   "neutral": null,
+   "source": "scores-page",
+   "state": "unlisted",
+   "winner": "home"
+  },
+  "9a5368f6-462b-4c47-bf29-36c0e30484db": {
+   "awayMp": "a55e7245-2b96-47c1-b890-72d2ca817553",
+   "awayScore": 67,
+   "date": "2026-11-03",
+   "forfeit": false,
+   "gameId": "ok26-0001",
+   "homeMp": "1a7f0296-8475-47ff-be1c-de41f414f299",
+   "homeScore": 61,
+   "neutral": null,
+   "source": "scores-page",
+   "state": "applied",
+   "winner": "away"
+  },
+  "df19c83c-4ebc-440a-81e9-9423e6821b16": {
+   "awayMp": "7bc2e72d-3599-4cf8-bd8f-b8bf6102c815",
+   "awayScore": 92,
+   "date": "2026-11-03",
+   "forfeit": false,
+   "homeMp": "3cf22b74-d4b2-447f-ae7a-9f5f0ebe0168",
+   "homeScore": 8,
+   "neutral": null,
+   "source": "scores-page",
+   "state": "unlisted",
+   "winner": "away"
+  }
+ }
 }
