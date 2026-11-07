@@ -1,6 +1,34 @@
 {
  "about": "RimRunnerOklahoma 2026-27 finals ledger, written by scripts/update_scores.py. Keyed by MaxPreps contest id. homeMp/awayMp are MaxPreps team ids. state: applied | unlisted (one team not in our list; counts for records only) | pending (final between listed teams with no scheduled game yet; awaiting team-page check) | ignored.",
  "finals": {
+  "4ddf981d-3c3d-477e-8e06-ad14dd786257": {
+   "awayMp": "7bc2e72d-3599-4cf8-bd8f-b8bf6102c815",
+   "awayScore": 70,
+   "date": "2026-11-06",
+   "forfeit": false,
+   "gameId": "ok26-0004",
+   "homeMp": "20c8a0f8-5c5a-43c0-982c-0ca108470828",
+   "homeScore": 41,
+   "neutral": null,
+   "source": "scores-page",
+   "state": "applied",
+   "winner": "away"
+  },
+  "4ff7d625-51b5-4275-9c70-1607a531dbad": {
+   "awayMp": "fd20a7ae-4e0f-4916-a364-5c66b2e560bb",
+   "awayScore": 0,
+   "date": "2026-11-06",
+   "forfeit": false,
+   "gameId": "ok26-x002",
+   "gameType": "conference",
+   "homeMp": "54a5b1a0-2b2b-4f4b-b2e8-f8079ed37cb7",
+   "homeScore": 7,
+   "neutral": false,
+   "source": "scores-page",
+   "state": "applied",
+   "verified": true,
+   "winner": "home"
+  },
   "53eca7d4-64f0-4a6a-b084-9f326d55804e": {
    "awayMp": "772d2c46-e9f4-48fe-8b5e-608e4a3407b3",
    "awayScore": 61,
@@ -12,6 +40,33 @@
    "source": "scores-page",
    "state": "unlisted",
    "winner": "home"
+  },
+  "72788c36-7c22-4eec-9b88-69aa04aff40f": {
+   "awayMp": "9bebc68f-7a8d-44b4-81f1-18ec4e9cc724",
+   "awayScore": 49,
+   "date": "2026-11-06",
+   "forfeit": false,
+   "gameId": "ok26-x003",
+   "gameType": "conference",
+   "homeMp": "4705ca2f-d713-493f-b05a-5018506f32a2",
+   "homeScore": 42,
+   "neutral": false,
+   "source": "scores-page",
+   "state": "applied",
+   "verified": true,
+   "winner": "away"
+  },
+  "86f53cd6-b41c-4d58-aa42-5d76d2dfff0a": {
+   "awayMp": "c95ffb6b-ba48-4d5a-92fb-e317b58b570c",
+   "awayScore": 76,
+   "date": "2026-11-05",
+   "forfeit": false,
+   "homeMp": "fb62b07c-692f-4ab1-a2cf-951290149355",
+   "homeScore": 71,
+   "neutral": null,
+   "source": "scores-page",
+   "state": "unlisted",
+   "winner": "away"
   },
   "9a5368f6-462b-4c47-bf29-36c0e30484db": {
    "awayMp": "a55e7245-2b96-47c1-b890-72d2ca817553",
