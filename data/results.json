@@ -563,6 +563,18 @@
    "verified": true,
    "winner": "home"
   },
+  "f776c1ec-c2ac-483b-a31e-453788bb0dac": {
+   "awayMp": "ccc417f2-6ac6-4629-9e1c-2b4b056e3390",
+   "awayScore": 68,
+   "date": "2026-11-13",
+   "forfeit": false,
+   "homeMp": "097bc283-60d2-4daf-a488-66bee1a148fb",
+   "homeScore": 37,
+   "neutral": null,
+   "source": "scores-page",
+   "state": "unlisted",
+   "winner": "away"
+  },
   "ffbe2bb8-7df1-4e6a-91c4-ff096907290d": {
    "awayMp": "97101bd2-1543-4bf3-b78c-9240d840bc6a",
    "awayScore": 59,
