@@ -1508,6 +1508,21 @@
    "verified": true,
    "winner": "home"
   },
+  "d08e6c26-5f5b-41a0-aa78-cc42c43b3487": {
+   "awayMp": "377811f9-14d4-44aa-9d42-cf5647c33552",
+   "awayScore": 24,
+   "date": "2026-11-19",
+   "forfeit": false,
+   "gameId": "ok26-x096",
+   "gameType": "non-conference",
+   "homeMp": "e564780f-7dff-4736-8f03-0db83223e530",
+   "homeScore": 100,
+   "neutral": false,
+   "source": "scores-page",
+   "state": "applied",
+   "verified": true,
+   "winner": "home"
+  },
   "d206d1cd-4c80-44f7-a6aa-9cda62be4113": {
    "awayMp": "e25b8c5e-b606-491c-8324-346b0bd5ec57",
    "awayScore": 49,
