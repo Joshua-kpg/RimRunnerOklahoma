@@ -746,6 +746,19 @@
    "state": "applied",
    "winner": "home"
   },
+  "48c4a735-1c23-4b78-bd4d-90ac67e266f1": {
+   "awayMp": "04fb6519-0903-43ec-836f-db3cf3ac8731",
+   "awayScore": 64,
+   "date": "2026-11-23",
+   "forfeit": false,
+   "gameId": "ok26-0066",
+   "homeMp": "b0add870-21eb-474e-a782-37a04d51db1d",
+   "homeScore": 108,
+   "neutral": null,
+   "source": "scores-page",
+   "state": "applied",
+   "winner": "home"
+  },
   "4a71f355-3b5c-4257-9d18-3e8398810b95": {
    "awayMp": "1686172d-ec18-486d-82c4-c823d655d044",
    "awayScore": 15,
